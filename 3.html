@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambar Full Screen (Background Putih)</title>
+    <style>
+        /* Mengatur body dan html agar memenuhi seluruh viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Mencegah scrollbar muncul */
+            background-color: #FFFFFF; /* Latar belakang putih */
+        }
+
+        /* Mengatur gambar agar menutupi seluruh area dan berpusat */
+        .fullscreen-image {
+            width: 100vw;   /* 100% dari lebar viewport */
+            height: 100vh;  /* 100% dari tinggi viewport */
+            object-fit: contain; /* Memastikan gambar terlihat penuh tanpa terpotong */
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <img src="logo2.png" alt="Gambar Logo" class="fullscreen-image">
+</body>
+</html>
